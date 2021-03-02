@@ -59,7 +59,7 @@ import Switch from "react-switch"
 
 
 export const ToggleSwitch = ({ theme }) => {
-  return <Switch
+  return <div style={{marginTop:"1%",marginBottom:"-1%"}}><Switch
     onChange={() => theme.updateTheme(theme.name === "light" ? "dark" : "light")}
     checked={theme.name === "dark"}
     onColor="#222"
@@ -68,5 +68,5 @@ export const ToggleSwitch = ({ theme }) => {
     uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
     boxShadow="0 0 2px 3px #B38CD9"
     activeBoxShadow="0 0 2px 3px #dfb3e6"
-  />
+  /></div>
 }

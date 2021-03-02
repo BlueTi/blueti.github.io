@@ -31,6 +31,7 @@ const Layout = ({
           {theme =>
             <ThemedLayout theme={theme}>
               <div className={styles.layout}>
+                <ToggleSwitch theme={theme} />
                 <Helmet>
                   <html lang="en" />
                   <title>{title}</title>
@@ -42,7 +43,6 @@ const Layout = ({
                   <meta name="twitter:description" content={description} />
                   <meta name="twitter:image" content={metaImageUrl} />
                 </Helmet>
-                <ToggleSwitch theme={theme} />
                 {children}
               </div>
             </ThemedLayout>
