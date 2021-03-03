@@ -15,6 +15,8 @@ const pageQuery = `{
         }
         fields {
           slug
+          category
+          description
         }
         excerpt(pruneLength: 5000)
       }

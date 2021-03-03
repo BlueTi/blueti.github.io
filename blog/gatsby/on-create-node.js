@@ -22,6 +22,36 @@ const onCreateNode = ({ node, actions, getNode }) => {
         value
       });
     }
+    if (typeof node.frontmatter.category !== 'undefined') {
+      const dirname = getNode(node.parent).relativeDirectory;
+      createNodeField({
+        node,
+        name: 'category',
+        value: `${node.frontmatter.category}`
+      });
+    } else {
+      const value = createFilePath({ node, getNode });
+      createNodeField({
+        node,
+        name: 'category',
+        value
+      });
+    }
+    if (typeof node.frontmatter.description !== 'undefined') {
+      const dirname = getNode(node.parent).relativeDirectory;
+      createNodeField({
+        node,
+        name: 'description',
+        value: `${node.frontmatter.description}`
+      });
+    } else {
+      const value = createFilePath({ node, getNode });
+      createNodeField({
+        node,
+        name: 'description',
+        value
+      });
+    }
 
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${_.kebabCase(tag)}/`);
