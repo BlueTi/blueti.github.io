@@ -1,5 +1,5 @@
 ---
-title: 다리를 지나는 트럭
+title: 모의고사
 date: "2021-03-25T15:25:37.121Z"
 template: "post"
 draft: false
