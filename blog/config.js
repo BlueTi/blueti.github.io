@@ -8,7 +8,7 @@ module.exports = {
   copyright: '© All rights reserved.',
   disqusShortname: 'blueti',
   postsPerPage: 4,
-  googleAnalyticsId: 'jard61',
+  googleAnalyticsId: 'G-KL8H6685L0',
   useKatex: false,
   menu: [
     {
