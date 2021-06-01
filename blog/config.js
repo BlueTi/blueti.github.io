@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://blueti.github.io',
+  url: 'https://blueti.github.io/',
   pathPrefix: '/',
   title: 'blog',
   subtitle: 'Lucete',
